@@ -79,6 +79,7 @@
                         <outlet property="pSaleBtn" destination="La8-p6-5r0" id="qsN-Nf-M4E"/>
                         <outlet property="pservBtn" destination="Zpc-pt-MQp" id="Ucr-eP-XgB"/>
                         <segue destination="hTt-WY-Nxj" kind="show" identifier="showServices" id="mSr-NK-i1z"/>
+                        <segue destination="ifE-1F-KQF" kind="show" identifier="showSale" id="Lvx-rV-0U8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -155,6 +156,59 @@
                 <exit id="z52-IN-1R9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="989.60000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--SaleVC-->
+        <scene sceneID="2sA-Bg-mbe">
+            <objects>
+                <viewController id="ifE-1F-KQF" customClass="saleVC" customModule="shoppingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cdi-xG-GQD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fZ-r4-z4i">
+                                <rect key="frame" x="96" y="293" width="183" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.16015625" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="X8Z-NS-TNv"/>
+                                    <constraint firstAttribute="height" constant="21" id="mMU-ce-LAd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyw-2F-bRm">
+                                <rect key="frame" x="15" y="35" width="79" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.21366087147887325" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="EHe-dY-3gY"/>
+                                    <constraint firstAttribute="width" constant="79" id="bLJ-7R-Jrs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RSY-1j-fL6" kind="unwind" unwindAction="unwindFromDesiredVCWithUnwindSegue:" id="x7Y-Zy-S02"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9fZ-r4-z4i" firstAttribute="centerX" secondItem="cdi-xG-GQD" secondAttribute="centerX" id="4Om-MB-ii6"/>
+                            <constraint firstItem="Nyw-2F-bRm" firstAttribute="leading" secondItem="Wry-vq-2Wo" secondAttribute="leading" constant="15" id="4Qb-qa-UWS"/>
+                            <constraint firstItem="9fZ-r4-z4i" firstAttribute="top" secondItem="Wry-vq-2Wo" secondAttribute="top" constant="273" id="YNt-ee-ooX"/>
+                            <constraint firstItem="Nyw-2F-bRm" firstAttribute="top" secondItem="Wry-vq-2Wo" secondAttribute="top" constant="15" id="o1Z-u8-glK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wry-vq-2Wo"/>
+                    </view>
+                    <connections>
+                        <outlet property="salesLbl" destination="9fZ-r4-z4i" id="FNg-pE-4V4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csK-1X-HSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RSY-1j-fL6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="989.60000000000002" y="851.42428785607206"/>
         </scene>
     </scenes>
     <resources>

@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     var sale1: sale?
     
+    var VC: String!
+    
     @IBOutlet weak var eqptBtn: UIButton!
     @IBOutlet weak var pservBtn: UIButton!
     @IBOutlet weak var pSaleBtn: UIButton!
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
             print(sender.currentTitle!)
             sale1?.cost = 100.00
             sale1?.item = sender.currentTitle
+            self.VC = "equipmentVC"
             
             //performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
             
@@ -43,6 +46,7 @@ class ViewController: UIViewController {
             print(sender.currentTitle!)
             sale1?.item = sender.currentTitle
             sale1?.cost = 60.00
+            self.VC = "servicesVC"
             performSegue(withIdentifier: "showServices", sender: self)
             
         } else {
@@ -50,13 +54,34 @@ class ViewController: UIViewController {
             print(sender.currentTitle!)
             sale1?.item = sender.currentTitle
             sale1?.cost = 20.00
+            self.VC = "saleVC"
+            performSegue(withIdentifier: "showSale", sender: self)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let servicesVC = segue.destination as? servicesVC{
-            servicesVC.sale = sale1
+        
+        
+        switch self.VC {
+        case "equipmentVC":
+//            if let servicesVC = segue.destination as? servicesVC{
+//                servicesVC.sale = sale1
+//            }
+            print("EquipmentVC load")
+        case "servicesVC":
+            if let servicesVC = segue.destination as? servicesVC{
+                servicesVC.sale = sale1
+            }
+        case "saleVC":
+            if let saleVC = segue.destination as? saleVC{
+                saleVC.sale2 = sale1
+            }
+        default:
+            print("None of the above code was executed")
+            return
         }
+
+        
     }
     
     

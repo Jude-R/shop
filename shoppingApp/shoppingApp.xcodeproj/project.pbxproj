@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		694F87AF1FB1316300834736 /* sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F87AE1FB1316300834736 /* sale.swift */; };
 		694F87B31FB15FFC00834736 /* servicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F87B21FB15FFC00834736 /* servicesVC.swift */; };
+		694F87B51FB2730B00834736 /* saleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694F87B41FB2730B00834736 /* saleVC.swift */; };
 		69A78B741FB01A06005DCB75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A78B731FB01A06005DCB75 /* AppDelegate.swift */; };
 		69A78B761FB01A06005DCB75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A78B751FB01A06005DCB75 /* ViewController.swift */; };
 		69A78B791FB01A06005DCB75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A78B771FB01A06005DCB75 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		694F87AE1FB1316300834736 /* sale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sale.swift; sourceTree = "<group>"; };
 		694F87B21FB15FFC00834736 /* servicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicesVC.swift; sourceTree = "<group>"; };
+		694F87B41FB2730B00834736 /* saleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saleVC.swift; sourceTree = "<group>"; };
 		69A78B701FB01A06005DCB75 /* shoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A78B731FB01A06005DCB75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69A78B751FB01A06005DCB75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				69A78B751FB01A06005DCB75 /* ViewController.swift */,
 				694F87B21FB15FFC00834736 /* servicesVC.swift */,
+				694F87B41FB2730B00834736 /* saleVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				694F87B31FB15FFC00834736 /* servicesVC.swift in Sources */,
 				694F87AF1FB1316300834736 /* sale.swift in Sources */,
+				694F87B51FB2730B00834736 /* saleVC.swift in Sources */,
 				69A78B761FB01A06005DCB75 /* ViewController.swift in Sources */,
 				69A78B741FB01A06005DCB75 /* AppDelegate.swift in Sources */,
 			);
