@@ -28,9 +28,6 @@ class ViewController: UIViewController {
     }
 
 
-    
-    
-    
     @IBAction func btnPressed(sender:UIButton) {
         if sender.currentTitle == "EQUIPMENT" {
             print("Equipment button pressed")
@@ -60,7 +57,6 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         
         switch self.VC {
         case "equipmentVC":

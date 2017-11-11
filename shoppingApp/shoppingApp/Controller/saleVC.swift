@@ -9,8 +9,11 @@
 import UIKit
 
 class saleVC: UIViewController {
+//class saleVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     var sale2: sale?
+    //var imgArray = [UIImage]
+    
     
     @IBOutlet weak var salesLbl: UILabel!
     
